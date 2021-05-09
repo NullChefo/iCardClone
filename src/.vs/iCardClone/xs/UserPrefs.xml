@@ -1,0 +1,47 @@
+﻿<Properties StartupConfiguration="{035B8F99-917A-4EB1-A4B0-62DCF4DA140C}|Default">
+  <MonoDevelop.Ide.ItemProperties.Presentation.iCard.WebApiServices FirstBuild="True" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Presentation/iCard.WebApiServices/Controllers/Security/BasicAuth.cs">
+    <Files>
+      <File FileName="Presentation/iCard.WebApiServices/Controllers/Security/BasicAuth.cs" Line="43" Column="69" />
+      <File FileName="Core/iCard.Data/Contexts/iCardContext.cs" Line="1" Column="1" />
+      <File FileName="Presentation/iCard.WebApiServices/Controllers/UserController.cs" Line="1" Column="1" />
+      <File FileName="Presentation/iCard.WebApiServices/Controllers/Security/UserLogin.cs" Line="1" Column="1" />
+      <File FileName="Core/iCard.ApplicationServices/Services/UserService.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="iCardClone" expanded="True">
+            <Node name="Core" expanded="True">
+              <Node name="iCard.ApplicationServices" expanded="True">
+                <Node name="Services" expanded="True" />
+              </Node>
+              <Node name="iCard.Data" expanded="True">
+                <Node name="Contexts" expanded="True" />
+                <Node name="Repositories" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="Presentation" expanded="True">
+              <Node name="iCard.WebApiServices" expanded="True">
+                <Node name="Dependencies" expanded="True" />
+                <Node name="Controllers" expanded="True">
+                  <Node name="Security" expanded="True">
+                    <Node name="BasicAuth.cs" selected="True" />
+                  </Node>
+                </Node>
+                <Node name="Properties" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Core.iCard.Data PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
