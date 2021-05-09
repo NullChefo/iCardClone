@@ -1,8 +1,0 @@
-<component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="iCard" type="CompoundRunConfigurationType">
-    <toRun name="iCard.Data" type="LaunchSettings" />
-    <toRun name="iCard.WebApiServices" type="LaunchSettings" />
-    <toRun name="iCard.ApplicationServices" type="LaunchSettings" />
-    <method v="2" />
-  </configuration>
-</component>
