@@ -1,23 +1,25 @@
-using System.Web.Http;
 using iCard.ApplicationServices.Services;
+using Microsoft.AspNetCore.Mvc;
 
 namespace iCard.WebApiServices.Controllers
 {
-    public class TransactionHistoryController : ApiController
+  //  [Route("api/[controller]")]
+    [ApiController]
+    public class TransactionHistoryController : ControllerBase
     {
         private readonly TransactionHistoryService _service = new TransactionHistoryService();
 
         [HttpGet, Route("api/user/{username}/account/transactions")]
-        public IHttpActionResult GetTransactions(string username)
+        public IActionResult GetTransactions(string username)
         {
-            return Json(_service.GetTransactionsForAccount(username));
+            return Ok(_service.GetTransactionsForAccount(username));
         }
 
 
         [HttpGet, Route("api/user/{username}/account/transactions/virtual-card/{cardname}")]
-        public IHttpActionResult GetTransactionForVirtualCard(string username, string cardname)
+        public IActionResult GetTransactionForVirtualCard(string username, string cardname)
         {
-            return Json(_service.GetTransactionsForVirtualCard(username, cardname));
+            return Ok(_service.GetTransactionsForVirtualCard(username, cardname));
         }
 
     }

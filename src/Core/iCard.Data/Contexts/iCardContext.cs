@@ -8,6 +8,8 @@ namespace iCard.Data.Contexts
 {
     public class ICardContext : DbContext
     {
+        private  string connectionString = "Host=localhost:5432;Database=icardcloneapp;Username=applogin;Password=1234";
+        
 
         public DbSet<User> Users { get; set; }
         public DbSet<Plan> Plan { get; set; }
@@ -22,12 +24,8 @@ namespace iCard.Data.Contexts
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            IConfigurationRoot configuration = new ConfigurationBuilder()
-                .SetBasePath(AppDomain.CurrentDomain.BaseDirectory)
-                .AddJsonFile("appsettings.json")
-                .Build();
-            optionsBuilder.UseNpgsql(configuration.GetConnectionString("DefaultConnection"));
-            /* optionsBuilder.UseSqlServer(configuration.GetConnectionString("MsSql"));  */
+            optionsBuilder.UseNpgsql(connectionString);
+           
         }
         
        

@@ -1,32 +1,34 @@
-using System.Web.Http;
 using iCard.ApplicationServices.DTOs;
 using iCard.ApplicationServices.Services;
+using Microsoft.AspNetCore.Mvc;
 
 namespace iCard.WebApiServices.Controllers
 {
-    public class PlanController : ApiController
+    // [Route("api/[controller]")]
+    [ApiController]
+    public class PlanController : ControllerBase
     {
         private readonly PlanService _service = new PlanService();
 
         [HttpGet, Route("api/user/{username}/account/plan")]
-        public IHttpActionResult GetPlan(string username)
+        public IActionResult GetPlan(string username)
         {
-            return Json(_service.GetPlanDetails(username));
+            return Ok(_service.GetPlanDetails(username));
         }
 
 
         [HttpPut, Route("api/user/{username}/account/plan")]
-        public IHttpActionResult UpdateAccount(string username, PlanDTO dto)
+        public IActionResult UpdateAccount(string username, PlanDTO dto)
         {
-            return Json(_service.UpdatePlan(username, dto));
+            return Ok(_service.UpdatePlan(username, dto));
         }
 
 
         [HttpPost, Route("api/user/{username}/account/plan/recharge")]
-        public IHttpActionResult AddAccount(string username)
+        public IActionResult AddAccount(string username)
         {
             _service.RechargeTransactions(username);
-            return Json("DONE!");
+            return Ok("DONE!");
         }
 
     }
