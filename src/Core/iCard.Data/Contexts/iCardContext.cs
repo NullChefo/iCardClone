@@ -1,11 +1,14 @@
+using System;
 using iCard.Data.Entities;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 
 
 namespace iCard.Data.Contexts
 {
     public class ICardContext : DbContext
     {
+
         public DbSet<User> Users { get; set; }
         public DbSet<Plan> Plan { get; set; }
         public DbSet<Account> Account { get; set; }
@@ -13,18 +16,23 @@ namespace iCard.Data.Contexts
         public DbSet<VirtualCard> VirtualCards { get; set; }
         public DbSet<TransactionHistory> TransactionHistories { get; set; }
 
-        /*
+        
+      
+         
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=localhost;Database=BalanceProjectDB;User Id=applogin;Password=12344321;");
-
+            IConfigurationRoot configuration = new ConfigurationBuilder()
+                .SetBasePath(AppDomain.CurrentDomain.BaseDirectory)
+                .AddJsonFile("appsettings.json")
+                .Build();
+            optionsBuilder.UseNpgsql(configuration.GetConnectionString("DefaultConnection"));
+            /* optionsBuilder.UseSqlServer(configuration.GetConnectionString("MsSql"));  */
         }
-         */
-
-
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-            => optionsBuilder.UseNpgsql("Host=localhost:5432;Database=icardcloneapp;Username=applogin;Password=1234");
-
+        
+       
+       
+        
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<VirtualCard>().ToTable("VirtualCard");
