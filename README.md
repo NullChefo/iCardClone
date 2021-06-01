@@ -1,5 +1,5 @@
 # iCardClone
-iCard Clone 
+iCard Clone Application
 
 
 # Database Schema
