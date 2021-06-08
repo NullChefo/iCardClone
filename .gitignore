@@ -1,4 +1,6 @@
-src/.idea
+src/.idea/
+
+.idea
 
 src/Presentation/iCard.WebApiServices/bin
 src/Presentation/iCard.WebApiServices/obj
