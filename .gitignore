@@ -1,0 +1,10 @@
+src/.idea
+
+src/Presentation/iCard.WebApiServices/bin
+src/Presentation/iCard.WebApiServices/obj
+
+src/Core/iCard.ApplicationServices/obj
+src/Core/iCard.ApplicationServices/bin
+
+src/Core/iCard.Data/obj
+src/Core/iCard.Data/bin

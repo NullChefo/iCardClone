@@ -8,6 +8,10 @@ namespace iCard.Data.Contexts
 {
     public class ICardContext : DbContext
     {
+        
+        
+        
+        // #TODO CHANGE THE CONNECTION_STRING !!!!
         private  string connectionString = "Host=localhost:5432;Database=icardcloneapp;Username=applogin;Password=1234";
         
 
@@ -19,17 +23,13 @@ namespace iCard.Data.Contexts
         public DbSet<TransactionHistory> TransactionHistories { get; set; }
 
         
-      
-         
-
+        
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseNpgsql(connectionString);
            
         }
         
-       
-       
         
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
