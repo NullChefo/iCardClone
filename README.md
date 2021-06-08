@@ -7,3 +7,18 @@ Also this project uses GitHub Actions for CI.
 # Database Schema
 
 ![iCardClone Database Schema Diagram](./docs/iCardCloneDatabaseSchemaDiagram.png)
+
+
+# Web Clients
+
+
+### React
+ 
+- Working in progress. Will be linked the repositories later
+---
+
+### Angular
+
+-  Working in progress. Will be linked the repositories later
+
+---
