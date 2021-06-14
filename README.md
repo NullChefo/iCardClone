@@ -12,7 +12,7 @@ using "dotnet ef" tool
 
 # Database Schema
 
-![iCardClone Database Schema Diagram](./docs/iCardCloneDatabaseSchemaDiagram.png)
+![iCardClone Database Schema Diagram](./img/0.png)
 
 
 
@@ -35,8 +35,8 @@ using "dotnet ef" tool
 
 Api endpoints/documentation
 
-![Swagger1.png](./docs/Swagger1.png)
+![Swagger](./img/1.png)
 
-![Swagger2.png](./docs/Swagger2.png)
+![Swagger](./img/2.png)
 
 

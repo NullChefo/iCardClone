@@ -10,3 +10,4 @@ src/Core/iCard.ApplicationServices/bin
 
 src/Core/iCard.Data/obj
 src/Core/iCard.Data/bin
+.DS_Store
